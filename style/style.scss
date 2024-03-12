@@ -1,11 +1,75 @@
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
+// Colors
+
+// Primary
+
+$c-Soft-red: hsl(10, 79%, 65%);
+$c-Cyan: hsl(186, 34%, 60%);
+
+// Neutral
+
+$c-Dark-brown: hsl(25, 47%, 15%);
+$c-Medium-brown: hsl(28, 10%, 53%);
+$c-Cream: hsl(27, 66%, 92%);
+$c-Very-pale-orange: hsl(33, 100%, 98%);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $c-Very-pale-orange;
+	font-family: "DM Sans";
+}
+
+header, main {
+	width: 90%;
+}
+
+header {
+	background-color: $c-Soft-red;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	color: $c-Very-pale-orange;
+
+	h1 {
+		font-size: 16px;
+		font-weight: 400;
+		padding-bottom: 5px;
+	}
+
+	p {
+		font-size: 28px;
+		font-weight: 500;
+	}
+	img {
+		width: 60px;
+	}
+}
 
 .chart {
-	width: 450px;
+	width: 90%;
 	height: 250px;
 
 	#myChart {
 		width: 100%;
 	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
 }
